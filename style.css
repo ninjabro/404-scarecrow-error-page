@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --iNconsolata: "Inconsolata", monospace;
+  --Montserrat: "Montserrat", sans-serif;
+  --SpaceMono: "Space Mono", monospace;
+}
+/* body {
+  margin: 0 auto;
+} */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.notFoundTitle {
+  margin: 30px auto 200px 20px;
+}
+.compContainer {
+  display: flex;
+  gap: 50px;
+  margin: 20px 40px;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 50px;
+}
+.scareCrowImg {
+  width: 100%;
+  max-width: 568px;
+}
+.notFoundTitle {
+  font-family: var(--iNconsolata);
+  font-size: 24px;
+}
+
+.rightContent {
+  font-family: var(--SpaceMono);
+}
+
+.heading {
+  font-size: 64px;
+}
+.rightContent > p {
+  font-size: 24px;
+}
+button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #333333;
+  width: 216px;
+  height: 68px;
+  margin-top: 20px;
+}
+
+footer {
+  display: flex;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    gap: 10px;
+  }
+  .compContainer {
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 20px;
+  }
+  .heading {
+    font-size: 48px;
+  }
+  .rightContent > p {
+    font-size: 18px;
+  }
+  button {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  footer {
+    margin: 40px 0;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}
